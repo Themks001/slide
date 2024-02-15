@@ -1,0 +1,12 @@
+
+@import 'section1.scss';
+@import 'Section2.scss';
+p{
+ margin: 0;
+ padding: 0;
+ font-size: clamp(16px, 4vw, 25px) ;
+ color: #adadad;
+ }
+a{
+ text-decoration: none;
+}
