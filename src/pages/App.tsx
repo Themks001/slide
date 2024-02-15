@@ -1,7 +1,7 @@
 
 import SectionOne from './sectionOne.tsx'
 import SectionTwo from './sectionTwo.tsx'
-import { Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 const App = () => {
   return (
     <div>
