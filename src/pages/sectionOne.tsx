@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import SectionTwo from "./sectionTwo.tsx";
+
 import gsap from "gsap";
 function SectionOne() {
  
