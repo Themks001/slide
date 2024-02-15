@@ -44,11 +44,11 @@
 }
 .section-2 section .content-grid .content-container .content-heading {
   text-align: center;
-  color: royalblue;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: #313131;
   flex-grow: 1;
   height: 100%;
   font-size: clamp(20px, 2vw, 40px);
@@ -64,8 +64,8 @@
   padding: 1vw 2vw;
   border-width: 3px;
   border-style: double;
-  background: white;
-  color: black;
+  background: #313131;
+  color: #fff;
   border-radius: 10px;
   font-size: clamp(1.3rem, 4vw, 2.3rem);
 }

@@ -57,7 +57,9 @@ const sectionTwo = () => {
     </div>
     </div>
     <div className='next-div'>
+    <Link to='/physic/elementryPerticle'>
     <button className='next-button'>Next Slide</button>
+    </Link>
     </div>
     </section>
     </div>
