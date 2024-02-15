@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SectionTwo from "./sectionTwo.tsx";
 import gsap from "gsap";
 function SectionOne() {
- setTimeout(() => setindex(index + 1), 1000);
+ 
  const comp = useRef(null);
  useLayoutEffect(() => {
   let ctx = gsap.context(() => {
