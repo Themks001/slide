@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+
 import SectionOneMain from './sectionOneMain.tsx'
 import gsap from "gsap";
 function SectionOne() {

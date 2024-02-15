@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef } from 'react'
 import {gsap} from 'gsap'
+import { Link } from 'react-router-dom'
 const sectionTwo = () => {
  const comp = useRef(null)
  
