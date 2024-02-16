@@ -2,14 +2,24 @@
  color: #ebecf3;
  box-sizing: border-box;
  overflow: scroll;
- font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ color: #a0a0c0;
+ font-family:
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  "Open Sans",
+  "Helvetica Neue",
+  sans-serif;
 }
 body {
- background: black;
+ background: $primary-bg-color;
 }
-h1 {
- font-size: clamp(60px, 10vw, 5rem);
-}
+
 $primary: #ebecf3;
 .homepage-div {
  height: 100vh;
@@ -30,44 +40,54 @@ $primary: #ebecf3;
    display: flex;
    min-width: 50vw;
    align-items: center;
-  img{
-   height: 60%;
-  }
+   img {
+    height: 60%;
+   }
   }
   .chapters {
    padding: 10px;
    display: flex;
    align-items: center;
-
+   height: 100vh;
    flex-wrap: wrap;
    justify-content: center;
 
    .lower-div {
-     a{
-    button {
-     padding: 10px 3px;
-     font-size: clamp(1.2rem, 4vw, 1.5rem);
-     width: 95%;
-     background: springgreen;
-     border-radius: 20px;
-     border: none;
-     color: black ;
-      
-     &:hover {
-      color: white;
-      background: black;
-      transform: scale(1.3);
-     }
+    a {
+     button {
+      padding: 10px 3px;
+      font-size: clamp(1.2rem, 4vw, 1.5rem);
+      width: 95%;
+      background: #8b7193;
+      border-radius: 20px;
+      border: none;
+      color: black;
+
+      &:hover {
+       color: white;
+       background: black;
+       transform: scale(1.3);
+      }
      }
     }
    }
    p {
     font-size: clamp(01rem, 4vw, 2rem);
     padding: 5% 0;
-    color: #fff;
+    
    }
    h1 {
     font-size: clamp(2.3rem, 3vw, 4rem) !important;
+    span:nth-child(1) {
+     color: #27f4a5;
+    }
+    span:last-child {
+     background: linear-gradient(45deg, #f5a549, #ee2678);
+     -webkit-background-clip: text;
+     background-clip: text;
+     
+     color: transparent;
+    }
    }
   }
  }
@@ -84,10 +104,17 @@ $primary: #ebecf3;
   .intro-text {
    font-size: clamp(40px, 10vw, 8rem);
    font-weight: 900;
-   color: $primary;
+   color: #e72e68;
    text-transform: uppercase;
    text-align: center;
   }
+   h1:nth-child(2n-1) {
+     background: linear-gradient(45deg, #f5a549, #ee2678);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+    }
+   
  }
 }
 
@@ -95,7 +122,7 @@ $primary: #ebecf3;
  height: 100vh;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
  #main-page {
   .image-div,
   .image-div img {
@@ -110,7 +137,6 @@ $primary: #ebecf3;
     top: 0;
     height: 100%;
     width: 100%;
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsut4qecL3Dq-IW1SwT-oU3_3eqVWArAaRUg&usqp=CAU");
     left: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,7 +151,7 @@ $primary: #ebecf3;
   }
  }
 }
-.image-section{
+.image-section {
  display: flex;
- justify-content: space-evenly
+ justify-content: space-evenly;
 }
