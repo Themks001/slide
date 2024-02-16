@@ -7,9 +7,9 @@ const App = () => {
   return (
     <div>
     <Routes>
-    <Route path='/physic/' element={<SectionOne/>} />
-    <Route path='/physic/elementryPerticle' element={<ElementryPerticle/>} />
-    <Route path='/physic/section2' element={<SectionTwo />} />
+    <Route path='/slide/' element={<SectionOne/>} />
+    <Route path='/slide/elementryPerticle' element={<ElementryPerticle/>} />
+    <Route path='/slide/section2' element={<SectionTwo />} />
     </Routes>
     </div>
   )
