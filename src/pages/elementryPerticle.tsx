@@ -2,7 +2,11 @@
 
 const elementryPerticle = () => {
   return (
-    <div></div>
+    <div>
+    
+    <h1>Comig Soon... stayed tuned</h1>
+    
+    </div>
   )
 }
 

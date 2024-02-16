@@ -4,21 +4,10 @@
  flex-wrap: wrap;
  flex-direction: column;
  h1 {
-  font-size: clamp(2rem, 6vw, 10rem);
+  font-size: clamp(2.3rem, 6vw, 10rem);
   text-align: center;
-  background: linear-gradient(
-   45deg,
-   #41ea59,
-   #41eab7,
-   #418dea,
-   #8d41ea,
-   #ea418c,
-   #beea41
-  );
+  color: white;
   font-weight: bolder;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
  }
  section {
   position: relative;

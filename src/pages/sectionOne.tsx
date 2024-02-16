@@ -9,33 +9,34 @@ function SectionOne() {
   let ctx = gsap.context(() => {
    let t1 = gsap.timeline();
    t1
-    .from("#intro-1", { xPercent: "-100", duration: .1, delay: 0 })
+    .from("#intro-1", { xPercent: "-100", duration: 1, delay: 0 })
     .from(["#title-1", "#title-2", "#title-3"], {
      opacity: 0,
-     stagger: 0.1,
+     stagger: 0.4,
      y: "+=300"
     })
     .to(["#title-1", "#title-2", "#title-3"], {
      opacity: 0,
-     stagger: 0.1,
+     stagger: 0.4,
      y: "-=300"
     })
-    .to("#intro-1", { xPercent: "-100", duration: .1 })
-    .from("#intro-2", { xPercent: "-100", duration: 0.1 })
+    .to("#intro-1", { xPercent: "-100", duration: .4 })
+    .from("#intro-2", { xPercent: "-100", duration: .3 })
     .from(["#title-4", "#title-5", "#title-6"], {
      opacity: 0,
-     stagger: 0.1,
+     stagger: 0.4,
      y: "+=300"
     })
     .to(["#title-4", "#title-5", "#title-6"], {
      opacity: 0,
-     stagger: 0.1,
-     y: "-=300"
+     stagger: 0.4,
+     y: "-=300",
+     duration:1
     })
     .to("#intro-2", { xPercent: "-100", duration: .1, delay: 0 })
     .from("#homepage", { opacity: 0, duration: .1 })
-    .from("#heading", {xPercent:"100", opacity:.1, scale:.3, duration:.5})
-    .from("#para", {xPercent:"-100", opacity:.1, scale:.3, duration:.5})
+    .from("#heading", {xPercent:"100", opacity:.1, duration:.5})
+    .from("#para", {xPercent:"-100", opacity:.1, duration:.5})
     .from("#button", { opacity:.1, scale:0, duration:.5})
   }, comp);
 

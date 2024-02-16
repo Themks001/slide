@@ -25,7 +25,7 @@ const sectionOneMain = () => {
       <div className="lower-div">
         <Link to="/physic/section2">
        <button id='button'>
-        Get Started
+        Next
        </button>
         </Link>
       </div>
@@ -37,20 +37,6 @@ const sectionOneMain = () => {
       alt=""
      />
     </div>
-   </div>
-   <div className="image-section">
-    <img
-     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWOE7CkK20RQvdLiDqtU5t1Ym0QeQ8jPATw&usqp=CAU"
-     alt=""
-    />
-    <img
-     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlNY1HfZwtMO9tEVcw8FVnDSu58mFtsAz5uA&usqp=CAU"
-     alt=""
-    />
-    <img
-     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_G1FCbp785-Y5vLGMPrj_EeV94HQNCqz_Q&usqp=CAU"
-     alt=""
-    />
    </div>
   </>
  );
