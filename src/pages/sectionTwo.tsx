@@ -65,7 +65,7 @@ const sectionTwo = () => {
       </div>
      </div>
      <div className="next-div">
-      <Link to="/physic/elementryPerticle">
+      <Link to="/slide/elementryPerticle">
        <button className="next-button">Next Slide</button>
       </Link>
      </div>

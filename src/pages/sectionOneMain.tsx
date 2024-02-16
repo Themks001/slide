@@ -22,7 +22,7 @@ const sectionOneMain = () => {
        evolving landscape of recent trends in physics.
       </p>
       <div className="lower-div">
-       <Link to="/physic/section2">
+       <Link to="/slide/section2">
         <button id="button">Next</button>
        </Link>
       </div>
