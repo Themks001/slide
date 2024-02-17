@@ -33,11 +33,12 @@ const sectionTwo = () => {
     <br />
     <div className='main'>
      <div className="content-grid">
-     {
-      contents.map((items, index)=>{
-       <Index key={index} index={index} topic={items}/>
-      })
-     }
+{
+  contents.map((items, index) => {
+    return <Index key={index} index={index} topic={items} />;
+  })
+}
+
      </div>
      <div className="next-div">
       <Link to="/slide/elementryPerticle">
