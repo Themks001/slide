@@ -1,0 +1,68 @@
+.next {
+  text-align: center;
+}
+.next h1:first-child {
+  color: mediumspringgreen;
+}
+.next h1 {
+  font-size: clamp(2.5rem, 10vw, 5rem);
+  text-align: center;
+  margin: 5vw;
+}
+.next h1 i {
+  color: deeppink;
+}
+.next h1 span {
+  background: linear-gradient(45deg, #f5a549, #ee2678);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.next p {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.next p span {
+  color: white;
+}
+
+.button-div {
+  width: 70%;
+  margin: 10vh auto;
+  text-align: center;
+}
+
+.next4 {
+  height: 100vh;
+  text-align: center;
+}
+.next4 img {
+  width: 60%;
+}
+.next4 h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  background: linear-gradient(45deg, #f5a549, #ee2678);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.next5 {
+  text-align: center;
+}
+.next5 h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  background: linear-gradient(45deg, #f5a549, #ee2678);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 10vh;
+  color: transparent;
+}
+.next5 p {
+  width: 70%;
+  margin: 10% auto;
+  font-size: clamp(25px, 3vw, 40px);
+}
+
+/*# sourceMappingURL=next.css.map */

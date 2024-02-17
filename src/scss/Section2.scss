@@ -2,7 +2,17 @@ $primary-text-color: #d3d3d3;
 *{
  overflow: hidden;
 }
-
+button{
+ padding: 5px 10px;
+ border: none;
+ border-radius: 10px;
+ font-size: 20px;
+ margin: 10px;
+ &:hover{
+  background: black;
+  color: white;
+ }
+}
 .section-2 {
  height: 100vh;
  display: flex;
@@ -31,6 +41,7 @@ $primary-text-color: #d3d3d3;
      display: flex;
      align-items: center;
      justify-content: center;
+     min-height: 6vh;
      .content-index {
       background: #09213d;
       color: $primary-text-color;

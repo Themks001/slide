@@ -3,10 +3,13 @@
 @import 'Section2.scss';
 @import 'section3.scss';
 @import 'section4.scss';
+@import "next.scss";
+@import "next2.scss";
+@import 'fundamental.scss';
 @import 'classificaton.scss';
+@import "universe.scss";
 *{
  font-family: a;
- 
   font-family: "Anta", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -20,4 +23,5 @@ p{
  }
 a{
  text-decoration: none;
+ color: black;
 }

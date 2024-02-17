@@ -1,4 +1,22 @@
+.headig-class{
+ font-size: clamp(2.5rem, 7vw, 5rem);
+ text-align: center;
+ background: linear-gradient(45deg, #0e6cdc, #f12f85);
+ -webkit-background-clip: text;
+ background-clip: text;
+ color: transparent;
+}
 .classification{
  color: white;
- background: deeppink;
+h2{
+ color: white;
+ font-size: clamp(2.5rem, 3vw, 4rem);
+ 
+}
+
+}
+li{
+ color: white;
+ list-style: disc !important;
+ padding-left: 20px;
 }

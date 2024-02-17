@@ -1,0 +1,66 @@
+.next {
+ text-align: center;
+ h1:first-child {
+  color: mediumspringgreen;
+ }
+ h1 {
+  font-size: clamp(2.5rem, 10vw, 5rem);
+  text-align: center;
+  margin: 5vw;
+  i {
+   color: deeppink;
+  }
+  span {
+   background: linear-gradient(45deg, #f5a549, #ee2678);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+  }
+ }
+ p {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  span {
+   color: white;
+  }
+ }
+}
+.button-div {
+ width: 70%;
+ margin: 10vh auto;
+ text-align: center;
+}
+.next4 {
+ height: 100vh;
+ text-align: center;
+ img {
+  width: 60%;
+ }
+ h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  background: linear-gradient(45deg, #f5a549, #ee2678);
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+  
+ }
+}
+
+.next5{
+ text-align: center;
+ h1{
+   font-size: clamp(2.5rem, 8vw, 5rem);
+  background: linear-gradient(45deg, #f5a549, #ee2678);
+   -webkit-background-clip: text;
+   background-clip: text;
+   padding-top: 10vh;
+   color: transparent;
+  
+ }
+ p{
+  width: 70%;
+  margin: 10% auto;
+  font-size: clamp(25px, 3vw, 40px);
+ }
+}

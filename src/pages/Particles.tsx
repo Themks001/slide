@@ -1,6 +1,23 @@
+import { useState } from "react";
 import Particle from "../component/particles.tsx";
 import { Link } from "react-router-dom";
 const Particles = () => {
+ const [Index, setIndex] = useState(0);
+ const arrayList = [
+  "#particle0",
+  "#particle1",
+  "#particle2",
+  "#particle3",
+  "#particle4",
+  "#particle5",
+  "#particle6",
+  "#particle7",
+  "#particle8"
+ ];
+ if (Index == 8) {
+  setIndex(0);
+ }
+ const currentSelected = arrayList[Index];
  const particlesItems = [
   {
    name: "Electrons",
@@ -71,21 +88,21 @@ const Particles = () => {
  return (
   <>
    <div className="particle-grid">
-    {particlesItems.map((items, index) => {
-     return (
-      <Particle
-       key={index}
-       description={items.description}
-       heading={items.name}
-       description2={items.description2}
-      />
-     );
+    {particlesItems.map(({ name, description, description2 }, i) => {
+     return(
+     <div key={i} className="partice-div" id={`particle${i}`}>
+      <h1 className="particle-heading">{name}</h1>
+      <p className="particle-description">{description + description2}</p>
+     </div>)
     })}
-    <div className="button-div">
-     <button className="button">
-      <Link to="/slide/classification">Next slide</Link>
-     </button>
-    </div>
+   </div>
+   <div className="button-div">
+    <button className="button">
+     <Link to="/slide/classification">Next page</Link>
+    </button>
+    <button className="button" onClick={() => setIndex(Index + 1)}>
+     <a href={currentSelected}>Next slide</a>
+    </button>
    </div>
   </>
  );

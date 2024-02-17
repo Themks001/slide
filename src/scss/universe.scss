@@ -1,0 +1,25 @@
+.universe {
+ height: 96vh;
+ width: 100vw;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(3, 1fr);
+ grid-gap: 2vw 2vw;
+ div {
+  text-align: center;
+  padding: 5px;
+  h1{
+   color: mediumspringgreen;
+   font-weight: 900;
+   margin: 5px;
+  }
+  border: 1px solid white;
+ }
+}
+@media (max-width:600px){
+ .universe{
+  grid-template-columns: 1fr;
+  grid-template-rows: 0;
+  height: auto;
+ }
+}

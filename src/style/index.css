@@ -136,6 +136,18 @@ body {
   overflow: hidden;
 }
 
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px;
+}
+button:hover {
+  background: black;
+  color: white;
+}
+
 .section-2 {
   height: 100vh;
   display: flex;
@@ -168,6 +180,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 6vh;
 }
 .section-2 section .main .content-grid .content-container .content-index {
   background: #09213d;
@@ -340,51 +353,249 @@ body {
 }
 
 .particle-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 1vw 2vw;
+  display: flex;
   height: 90vh;
   max-width: 100vw;
 }
 .particle-grid .partice-div {
-  background: #0f0643;
-  padding: 5px;
-  border: 2px solid #fff;
-  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 2vw;
 }
 .particle-grid .partice-div h1 {
   color: #fff;
   font-size: clamp(23px, 2vw, 34px);
-  border-left: 3px solid mediumspringgreen;
-  border-right: 3px solid mediumspringgreen;
-  background: #111;
+  font-weight: 900;
 }
 .particle-grid .partice-div p {
-  color: #fff;
+  color: #d3d3d3;
 }
 
-.button {
+.button-div {
+  display: flex;
+  justify-content: space-between;
+}
+.button-div .button {
   padding: 10px 15px;
   background: white;
-  color: black !important;
+  color: black;
   border-radius: 10px;
   outline: none;
   margin: 10px;
 }
 
-@media (max-width: 800px) {
-  .particle-grid {
-    grid-template-columns: repeat(1, minmax(30vh, 1fr));
-    grid-template-rows: repeat(9, 1fr);
+.classification-div {
+  position: absolute;
+  bottom: 10%;
+}
+
+.next {
+  text-align: center;
+}
+.next h1:first-child {
+  color: mediumspringgreen;
+}
+.next h1 {
+  font-size: clamp(2.5rem, 10vw, 5rem);
+  text-align: center;
+  margin: 5vw;
+}
+.next h1 i {
+  color: deeppink;
+}
+.next h1 span {
+  background: linear-gradient(45deg, #f5a549, #ee2678);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.next p {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.next p span {
+  color: white;
+}
+
+.button-div {
+  width: 70%;
+  margin: 10vh auto;
+  text-align: center;
+}
+
+.next4 {
+  height: 100vh;
+  text-align: center;
+}
+.next4 img {
+  width: 60%;
+}
+.next4 h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  background: linear-gradient(45deg, #f5a549, #ee2678);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.next5 {
+  text-align: center;
+}
+.next5 h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  background: linear-gradient(45deg, #f5a549, #ee2678);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-top: 10vh;
+  color: transparent;
+}
+.next5 p {
+  width: 70%;
+  margin: 10% auto;
+  font-size: clamp(25px, 3vw, 40px);
+}
+
+.next3 ul h1, .next2 ul h1 {
+  font-size: clamp(5rem, 12vw, 8rem);
+  margin: 10vw;
+}
+.next3 ul div, .next2 ul div {
+  text-align: center;
+}
+.next3 ul img, .next2 ul img {
+  height: 50%;
+}
+.next3 li, .next2 li {
+  font-size: clamp(25px, 3vw, 3rem);
+}
+
+.next3 h1 {
+  font-size: clamp(1.5rem, 8vh, 3rem);
+  text-align: center;
+  background: linear-gradient(45deg, #f5a549, #ee2678);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.next3 p {
+  width: 70%;
+  margin: auto;
+  font-size: clamp(25px, 5vw, 1.3rem);
+}
+.next3 div {
+  text-align: center;
+  margin: 5vh;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fundamental {
+  display: flex;
+  max-width: 100vw;
+  overflow: hidden;
+  height: 90vh;
+}
+.fundamental div {
+  background: rgb(0, 0, 45);
+  padding: 2vw;
+  min-height: 100%;
+  min-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fundamental div img {
+  width: 50%;
+  object-fit: contain;
+}
+.fundamental div h1 {
+  font-size: clamp(1.4rem, 3vw, 3rem);
+  text-align: center;
+  font-weight: 900;
+  background: linear-gradient(45deg, #0e6cdc, #f12f85);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.fundamental div p {
+  color: white;
+  font-size: clamp(1rem, 1vw, 2.3rem);
+}
+
+.next-button {
+  display: flex;
+  justify-content: space-between;
+}
+.next-button button {
+  border: none;
+  color: #111;
+  padding: 5px 10px;
+}
+
+.headig-class {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  text-align: center;
+  background: linear-gradient(45deg, #0e6cdc, #f12f85);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.classification {
+  color: white;
+}
+.classification h2 {
+  color: white;
+  font-size: clamp(2.5rem, 3vw, 4rem);
+}
+
+li {
+  color: white;
+  list-style: disc !important;
+  padding-left: 20px;
+}
+
+.universe {
+  height: 96vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2vw 2vw;
+}
+.universe div {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid white;
+}
+.universe div h1 {
+  color: mediumspringgreen;
+  font-weight: 900;
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  .universe {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0;
     height: auto;
   }
 }
-.classification {
-  color: white;
-  background: deeppink;
-}
-
 * {
   font-family: a;
   font-family: "Anta", sans-serif;
@@ -400,6 +611,7 @@ p {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=index.css.map */

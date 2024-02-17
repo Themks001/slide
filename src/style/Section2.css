@@ -2,6 +2,18 @@
   overflow: hidden;
 }
 
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px;
+}
+button:hover {
+  background: black;
+  color: white;
+}
+
 .section-2 {
   height: 100vh;
   display: flex;
@@ -34,6 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 6vh;
 }
 .section-2 section .main .content-grid .content-container .content-index {
   background: #09213d;
