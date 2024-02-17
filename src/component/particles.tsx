@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 interface ParticleProps {
+ heading: string;
  description: string;
  description2: string;
- title: string;
 }
 
 const particles: React.FC<ParticleProps> = ({
