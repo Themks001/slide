@@ -1,7 +1,9 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
+import Index from '../component/Index.tsx'
 const sectionTwo = () => {
+ const contents = ['Elementry Particle', 'Quarks', 'Universe', 'Laptons', "Hedrons", 'Classificaton Of Elementry Particles', '']
  const comp = useRef(null);
 
  useLayoutEffect(() => {
@@ -31,38 +33,8 @@ const sectionTwo = () => {
     <br />
     <div className='main'>
      <div className="content-grid">
-      <div className="content-container" id="child-grid-1">
-       <div className="content-index">01</div>
-       <h2 className="content-heading">Elementry Particle</h2>
-      </div>
-      <div className="content-container" id="child-grid-2">
-       <div className="content-index">02</div>
-       <h2 className="content-heading">Particle and antiparticle</h2>
-      </div>
-      <div className="content-container" id="child-grid-3">
-       <div className="content-index">03</div>
-       <h2 className="content-heading">Classification of Elementry Particle</h2>
-      </div>
-      <div className="content-container" id="child-grid-4">
-       <div className="content-index">04</div>
-       <h2 className="content-heading">Fundamental Interactions</h2>
-      </div>
-      <div className="content-container" id="child-grid-5">
-       <div className="content-index">05</div>
-       <h2 className="content-heading">Leptons</h2>
-      </div>
-      <div className="content-container" id="child-grid-6">
-       <div className="content-index">06</div>
-       <h2 className="content-heading">Hadrons</h2>
-      </div>
-      <div className="content-container" id="child-grid-7">
-       <div className="content-index">07</div>
-       <h2 className="content-heading">Quarks</h2>
-      </div>
-      <div className="content-container" id="child-grid-8">
-       <div className="content-index">08</div>
-       <h2 className="content-heading">Universe</h2>
-      </div>
+  <Index topic='Elementry Particle' index={'01'}/>
+
      </div>
      <div className="next-div">
       <Link to="/slide/elementryPerticle">

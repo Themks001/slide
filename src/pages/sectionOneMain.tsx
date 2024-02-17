@@ -10,7 +10,7 @@ const sectionOneMain = () => {
        {" "}
        Some recent <span>Discoveries </span>that
        <br />
-       were made in physic
+       were made in <span className='physic'>physic</span>
        <br />
        in the <span>recent years</span>
       </h1>

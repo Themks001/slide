@@ -1,5 +1,4 @@
 * {
- color: #ebecf3;
  box-sizing: border-box;
  overflow: scroll;
  color: #a0a0c0;
@@ -17,7 +16,7 @@
   sans-serif;
 }
 body {
- background: $primary-bg-color;
+ background: #18161b;
 }
 
 $primary: #ebecf3;
@@ -74,18 +73,18 @@ $primary: #ebecf3;
    p {
     font-size: clamp(01rem, 4vw, 2rem);
     padding: 5% 0;
-    
    }
    h1 {
     font-size: clamp(2.3rem, 3vw, 4rem) !important;
     span:nth-child(1) {
      color: #27f4a5;
     }
+
     span:last-child {
      background: linear-gradient(45deg, #f5a549, #ee2678);
      -webkit-background-clip: text;
      background-clip: text;
-     
+
      color: transparent;
     }
    }
@@ -97,7 +96,7 @@ $primary: #ebecf3;
  position: absolute;
  height: 100vh;
  width: 100vw;
- background: #111;
+
  display: grid;
  place-content: center;
  div {
@@ -107,14 +106,10 @@ $primary: #ebecf3;
    color: #e72e68;
    text-transform: uppercase;
    text-align: center;
+   text-shadow: -1px -1px 0 white;
+   text-shadow: -2px -2px  white;
   }
-   h1:nth-child(2n-1) {
-     background: linear-gradient(45deg, #f5a549, #ee2678);
-     -webkit-background-clip: text;
-     background-clip: text;
-     color: transparent;
-    }
-   
+ 
  }
 }
 
@@ -154,4 +149,12 @@ $primary: #ebecf3;
 .image-section {
  display: flex;
  justify-content: space-evenly;
+}
+.physic {
+ color: deeppink;
+ display: inline-block;
+ font-weight: 900;
+ text-shadow: 
+ 0 0 5px deeppink
+ 0 0 2px deeppink;
 }

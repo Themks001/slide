@@ -3,8 +3,8 @@ import { useLayoutEffect, useRef } from "react";
 import SectionOneMain from './sectionOneMain.tsx'
 import gsap from "gsap";
 function SectionOne() {
- const staggerValue = 0.5
- const durationValue = 1
+ const staggerValue = 0.1
+ const durationValue = .5
  const comp = useRef(null);
  useLayoutEffect(() => {
   let ctx = gsap.context(() => {
@@ -19,26 +19,28 @@ function SectionOne() {
     .to(["#title-1", "#title-2", "#title-3"], {
      opacity: 0,
      stagger: staggerValue,
-     y: "-=300"
+     y: "-=300",
+     delay:.6
     })
     .to("#intro-1", { xPercent: "-100", duration: durationValue })
     .from("#intro-2", { xPercent: "-100", duration: durationValue })
     .from(["#title-4", "#title-5", "#title-6"], {
      opacity: 0,
-     stagger: 0.4,
+     stagger: staggerValue,
      y: "+=300"
     })
     .to(["#title-4", "#title-5", "#title-6"], {
      opacity: 0,
      stagger: staggerValue,
      y: "-=300",
-     duration:durationValue
+     duration:durationValue,
+     delay:.6
     })
-    .to("#intro-2", { xPercent: "-100", duration: durationValue, delay: 0 })
+    .to("#intro-2", { xPercent: "-100", duration: durationValue, delay:0.6 })
     .from("#homepage", { opacity: 0, duration: durationValue })
     .from("#heading", {xPercent:"100", opacity:.1, duration:durationValue})
     .from("#para", {xPercent:"-100", opacity:.1, duration:durationValue})
-    .from("#button", { opacity:.1, scale:0, duration:durationValue})
+    .from("#button", { scale:0, duration:durationValue})
   }, comp);
 
   return () => ctx.revert();
@@ -71,7 +73,7 @@ function SectionOne() {
        <br />&
       </h1>
       <h1 className="intro-text" id="title-6">
-       Presna Shrestha
+       Presana Shrestha
       </h1>
      </div>
     </div>
