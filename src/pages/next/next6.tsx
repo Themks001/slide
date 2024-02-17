@@ -1,5 +1,4 @@
-import React from "react";
-
+import { Link } from 'react-router-dom'
 const next6 = () => {
  return (
   <div className='next4'>

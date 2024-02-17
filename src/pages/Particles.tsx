@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Particle from "../component/particles.tsx";
 import { Link } from "react-router-dom";
 const Particles = () => {
  const [Index, setIndex] = useState(0);
