@@ -1,4 +1,3 @@
-import React from "react";
 
 const Elementary = () => {
  return (
@@ -26,10 +25,10 @@ const Elementary = () => {
    </div>
    
    <div id='atom-div'>
-   <div class="atom">
-    <div class="line line-1"></div>
-    <div class="line line-2"></div>
-    <div class="line line-3"></div>
+   <div className="atom">
+    <div className="line line-1"></div>
+    <div className="line line-2"></div>
+    <div className="line line-3"></div>
 </div>   
    </div>
    </div>

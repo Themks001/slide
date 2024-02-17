@@ -33,8 +33,11 @@ const sectionTwo = () => {
     <br />
     <div className='main'>
      <div className="content-grid">
-  <Index topic='Elementry Particle' index={'01'}/>
-
+     {
+      contents.map((items, index)=>{
+       <Index key={index} index={index} topic={items}/>
+      })
+     }
      </div>
      <div className="next-div">
       <Link to="/slide/elementryPerticle">
