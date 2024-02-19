@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import { Link } from 'react-router-dom'
-import { change } from "../context.tsx";
+/*import { change } from "../context.tsx";*/
 import Main from './chapter1/Main.tsx'
 const App = () => {
  const [hidden, sethidden] = useState(false)
@@ -8,14 +8,14 @@ const App = () => {
    <>
     <div id='main-body'>
     <Main />
-   {change ? (
+   {true ? (
     ""
    ) : (
     <div>
      <Link to='/slide'>
       <button>&larr;</button>
      </Link>
-     <Link to='/slide'>
+     <Link to='/slide/'>
       <button>&rarr;</button>
      </Link>
     </div>

@@ -11,7 +11,6 @@ import NextThree from "../next/next3.tsx";
 import NextFive from "../next/next5.tsx";
 import NextSix from "../next/next6.tsx";
 import NextFour from "../next/inext4.tsx";
-
 import { Route, Routes } from "react-router-dom";
 const Main = () => {
  return (

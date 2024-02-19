@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react'
- const showSlider = React.createContext()
- const updateShowSlider = React.createContext()
+ const showSlider = React.createContext(null)
+ const updateShowSlider = React.createContext(null)
 
  export function change(){
   return useContext(showSlider)
