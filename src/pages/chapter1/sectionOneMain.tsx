@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Svg from './imges/SVG.tsx'
+import Svg from '../imges/SVG.tsx'
 const sectionOneMain = () => {
  return (
   <>

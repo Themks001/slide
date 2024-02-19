@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import Index from '../component/Index.tsx'
+import Index from '../../component/Index.tsx'
 const sectionTwo = () => {
  const contents = ['Elementry Particle', 'Particle and Anti-Particle', 'Classificaton Of Elementry Particles', 'Fundamental Interaction', 'Leptons', 'Hadrons','Quarks', 'Universe' ]
  const comp = useRef(null);

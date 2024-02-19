@@ -1,10 +1,10 @@
 import { useLayoutEffect, useRef } from "react";
 
-import SectionOneMain from './sectionOneMain.tsx'
+import SectionOneMain from "./sectionOneMain.tsx";
 import gsap from "gsap";
 function SectionOne() {
- const staggerValue = 0.1
- const durationValue = .3
+ const staggerValue = 0.1;
+ const durationValue = 0.3;
  const comp = useRef(null);
  useLayoutEffect(() => {
   let ctx = gsap.context(() => {
@@ -20,7 +20,7 @@ function SectionOne() {
      opacity: 0,
      stagger: staggerValue,
      y: "-=300",
-     delay:.6
+     delay: 0.6
     })
     .to("#intro-1", { xPercent: "-100", duration: durationValue })
     .from("#intro-2", { xPercent: "-100", duration: durationValue })
@@ -33,18 +33,22 @@ function SectionOne() {
      opacity: 0,
      stagger: staggerValue,
      y: "-=300",
-     duration:durationValue,
-     delay:.6
+     duration: durationValue,
+     delay: 0.6
     })
-    .to("#intro-2", { xPercent: "-100", duration: durationValue, delay:0.6 })
+    .to("#intro-2", { xPercent: "-100", duration: durationValue, delay: 0.6 })
     .from("#homepage", { opacity: 0, duration: durationValue })
-    .from("#heading", {xPercent:"100", opacity:.1, duration:durationValue})
-    .from("#para1", {xPercent:"-100", opacity:.1, duration:durationValue})
-    .from("#para2", {xPercent:"100", opacity:.1, duration:durationValue})
-    .from("#para3", {xPercent:"-100", opacity:.1, duration:durationValue})
-    .from("#para4", {xPercent:"100", opacity:.1, duration:durationValue})
-    .from("#para5", {xPercent:"-100", opacity:.1, duration:durationValue})
-    .from("#button", { scale:0, duration:durationValue})
+    .from("#heading", {
+     xPercent: "100",
+     opacity: 0.1,
+     duration: durationValue
+    })
+    .from("#para1", { xPercent: "-100", opacity: 0.1, duration: durationValue })
+    .from("#para2", { xPercent: "100", opacity: 0.1, duration: durationValue })
+    .from("#para3", { xPercent: "-100", opacity: 0.1, duration: durationValue })
+    .from("#para4", { xPercent: "100", opacity: 0.1, duration: durationValue })
+    .from("#para5", { xPercent: "-100", opacity: 0.1, duration: durationValue })
+    .from("#button", { scale: 0, duration: durationValue });
   }, comp);
 
   return () => ctx.revert();
@@ -82,8 +86,8 @@ function SectionOne() {
      </div>
     </div>
     <div className="homepage-div" id="homepage">
- <SectionOneMain/>
-   </div>
+     <SectionOneMain />
+    </div>
    </div>
   </>
  );
