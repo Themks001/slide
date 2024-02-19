@@ -9,13 +9,10 @@
 @import 'classificaton.scss';
 @import "universe.scss";
 *{
- font-family: a;
   font-family: "Anta", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
 }
 p{
+  color: white;
  margin: 0;
  padding: 0;
  font-size: clamp(16px, 4vw, 25px) ;

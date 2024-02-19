@@ -4,7 +4,7 @@ import SectionOneMain from './sectionOneMain.tsx'
 import gsap from "gsap";
 function SectionOne() {
  const staggerValue = 0.1
- const durationValue = .5
+ const durationValue = .3
  const comp = useRef(null);
  useLayoutEffect(() => {
   let ctx = gsap.context(() => {
@@ -39,7 +39,11 @@ function SectionOne() {
     .to("#intro-2", { xPercent: "-100", duration: durationValue, delay:0.6 })
     .from("#homepage", { opacity: 0, duration: durationValue })
     .from("#heading", {xPercent:"100", opacity:.1, duration:durationValue})
-    .from("#para", {xPercent:"-100", opacity:.1, duration:durationValue})
+    .from("#para1", {xPercent:"-100", opacity:.1, duration:durationValue})
+    .from("#para2", {xPercent:"100", opacity:.1, duration:durationValue})
+    .from("#para3", {xPercent:"-100", opacity:.1, duration:durationValue})
+    .from("#para4", {xPercent:"100", opacity:.1, duration:durationValue})
+    .from("#para5", {xPercent:"-100", opacity:.1, duration:durationValue})
     .from("#button", { scale:0, duration:durationValue})
   }, comp);
 

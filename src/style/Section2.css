@@ -22,7 +22,7 @@ button:hover {
 .section-2 h1 {
   font-size: clamp(2.3rem, 6vw, 10rem);
   text-align: center;
-  color: #d3d3d3;
+  color: white;
   font-weight: bolder;
 }
 .section-2 section {
@@ -50,7 +50,7 @@ button:hover {
 }
 .section-2 section .main .content-grid .content-container .content-index {
   background: #09213d;
-  color: #d3d3d3;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +63,7 @@ button:hover {
 }
 .section-2 section .main .content-grid .content-container .content-heading {
   text-align: center;
-  color: #d3d3d3;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,7 @@ button:hover {
   border-width: 3px;
   border-style: double;
   background: #313131;
-  color: #d3d3d3;
+  color: white;
   border-radius: 10px;
   font-size: clamp(1.3rem, 4vw, 2.3rem);
 }
