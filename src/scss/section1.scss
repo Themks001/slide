@@ -121,29 +121,11 @@ $primary: #ebecf3;
 
 @media (max-width: 800px) {
  #main-page {
-  .image-div,
-  .image-div img {
-   display: none;
-   max-width: 0;
-  }
-  .chapters {
-   min-width: 100vw;
-   &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -222;
-    opacity: 0.3;
-   }
+  flex-direction: column-reverse;
   
     }
    }
-  }
+ 
  
 .image-section {
  display: flex;
