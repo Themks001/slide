@@ -15,14 +15,13 @@ body {
 .homepage-div #main-page {
   display: flex;
   width: 100vw;
-  position: relative;
 }
 .homepage-div #main-page .image-div {
   min-width: 45vw;
   align-items: center;
 }
 .homepage-div #main-page .image-div svg {
-  width: 45vw;
+  width: 44vw;
 }
 .homepage-div #main-page .chapters {
   padding: 10px;
