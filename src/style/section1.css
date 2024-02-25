@@ -12,21 +12,17 @@ body {
   position: relative;
   width: 100vw;
 }
-.homepage-div .button-div {
-  position: absolute;
-  bottom: 10%;
-  text-align: right;
-  width: 100vw;
-  margin: 0 10vw;
-}
 .homepage-div #main-page {
   display: flex;
   width: 100vw;
   position: relative;
 }
 .homepage-div #main-page .image-div {
-  min-width: 50vw;
+  min-width: 45vw;
   align-items: center;
+}
+.homepage-div #main-page .image-div svg {
+  width: 45vw;
 }
 .homepage-div #main-page .chapters {
   padding: 10px;
@@ -52,11 +48,11 @@ body {
 }
 .homepage-div #main-page .chapters .lower-div a button:hover {
   color: white;
-  transform: scale(1.3);
+  transform: scale(1.001);
 }
 .homepage-div #main-page .chapters p {
   font-size: clamp(1rem, 4vw, 2rem);
-  display: inline;
+  display: inline-block;
 }
 .homepage-div #main-page .chapters h1 {
   font-size: clamp(2.3rem, 3vw, 4rem) !important;

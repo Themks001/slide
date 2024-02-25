@@ -9,7 +9,7 @@ const Fundamental = () => {
  ]
  const [index, setindex] = useState(0)
  const currentSelected = indexList[index]
- if(index==3){
+ if(index==4){
   setindex(0)
  }
  return (
@@ -28,6 +28,9 @@ const Fundamental = () => {
        objects together with a force proportional to their mass and inversely
        proportional to the squared distance between them. secrets.
       </p>
+         <button onClick={()=>setindex(index+1)} className='button'>
+    <a href={currentSelected}>Next slide</a>
+   </button>
      </div>
      <div  id='index2'>
       <img
@@ -41,6 +44,9 @@ const Fundamental = () => {
        stars, fueling fusion that creates most elements. It governs radioactive
        decay, transforming particles and shaping Earth's interior. identities.
       </p>
+         <button onClick={()=>setindex(index+1)} className='button'>
+    <a href={currentSelected}>Next slide</a>
+   </button>
      </div>
      <div  id='index3'>
       <img
@@ -56,6 +62,9 @@ const Fundamental = () => {
        the electromagnetic field in motion, carrying energy across vast
        distances.
       </p>
+         <button onClick={()=>setindex(index+1)} className='button'>
+    <a href={currentSelected}>Next slide</a>
+   </button>
      </div>
      <div  id='index4'>
       <img
@@ -70,16 +79,15 @@ const Fundamental = () => {
        strength. While short-range, its grasp exceeds gravity and
        electromagnetism, ensuring nuclear stability.
       </p>
+       <button onClick={()=>setindex(index+1)}>
+    <Link to='/slide/universe'>Next page</Link>
+   </button>
      </div>
   
    </section>
    <div>
-     <button onClick={()=>setindex(index+1)}>
-    <Link to='/slide/universe'>Next page</Link>
-   </button>
-   <button onClick={()=>setindex(index+1)} className='button'>
-    <a href={currentSelected}>Next slide</a>
-   </button>
+ 
+
    </div>
    <div>
  

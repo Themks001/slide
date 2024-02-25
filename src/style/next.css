@@ -5,9 +5,10 @@
   color: mediumspringgreen;
 }
 .next h1 {
-  font-size: clamp(2.5rem, 10vw, 5rem);
+  font-size: clamp(2rem, 10vw, 3rem);
   text-align: center;
   margin: 5vw;
+  color: white;
 }
 .next h1 i {
   color: deeppink;
@@ -27,12 +28,6 @@
   color: white;
 }
 
-.button-div {
-  width: 70%;
-  margin: 10vh auto;
-  text-align: center;
-}
-
 .next4 {
   height: 100vh;
   text-align: center;
@@ -41,7 +36,7 @@
   width: 60%;
 }
 .next4 h1 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 5rem);
   background: linear-gradient(45deg, #f5a549, #ee2678);
   -webkit-background-clip: text;
   background-clip: text;
@@ -52,7 +47,7 @@
   text-align: center;
 }
 .next5 h1 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 3rem);
   background: linear-gradient(45deg, #f5a549, #ee2678);
   -webkit-background-clip: text;
   background-clip: text;
@@ -62,7 +57,7 @@
 .next5 p {
   width: 70%;
   margin: 10% auto;
-  font-size: clamp(25px, 3vw, 40px);
+  font-size: clamp(13px, 3vw, 1rem);
 }
 
 /*# sourceMappingURL=next.css.map */

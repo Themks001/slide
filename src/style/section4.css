@@ -1,11 +1,9 @@
-* {
-  overflow: scroll;
-}
-
 .particle-grid {
   display: flex;
   height: 90vh;
+  box-sizing: border-box;
   max-width: 100vw;
+  padding: 10vw;
 }
 .particle-grid .partice-div {
   display: flex;
@@ -28,6 +26,12 @@
 .classification-div {
   position: absolute;
   bottom: 10%;
+}
+
+@media (max-width: 800px) {
+  .particle-grid {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=section4.css.map */

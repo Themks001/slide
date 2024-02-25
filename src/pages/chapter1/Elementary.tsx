@@ -26,7 +26,11 @@ const Elementary = () => {
      </p>
      <div>
      <button>
-       <Link to='/slide/particles'>Next slide</Link>
+       <Link to='/slide/particles'>Next          
+       <i
+          className="fa-solid fa-arrow-right"
+          style={{ margin: "0 10px" }}
+         ></i></Link>
       </button>
       </div>
     </div>

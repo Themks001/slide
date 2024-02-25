@@ -1,22 +1,22 @@
 .next3, .next2{
  ul {
   h1{
-   font-size: clamp(5rem, 12vw, 8rem);
+   font-size: clamp(2rem, 7vw, 5rem);
    margin: 10vw;
   }
   div{
-   text-align: center;
+   text-align: left;
   }
   img{
    height: 50%;
   }}
   li{
-   font-size: clamp(25px, 3vw, 3rem);
+   font-size: clamp(15px, 3vw, 2.5rem);
  }
 }
-.next3{
+.next3, .inext4{
  h1{
-  font-size: clamp(1.5rem, 8vh, 3rem);
+  font-size: clamp(1.5rem, 5vh, 2.4rem);
   text-align: center;
   background: linear-gradient(45deg, #f5a549, #ee2678);
      -webkit-background-clip: text;
@@ -24,12 +24,12 @@
      color: transparent;
  }
  p{
-  width: 70%;
+  width: 90%;
   margin: auto;
-  font-size: clamp(25px, 5vw, 1.3rem);
+  font-size: clamp(14px, 4vw, 1rem);
  }
  div{
-  text-align: center;
+  text-align: left;
   margin: 5vh;
  }
  }

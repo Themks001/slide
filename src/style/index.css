@@ -12,21 +12,17 @@ body {
   position: relative;
   width: 100vw;
 }
-.homepage-div .button-div {
-  position: absolute;
-  bottom: 10%;
-  text-align: right;
-  width: 100vw;
-  margin: 0 10vw;
-}
 .homepage-div #main-page {
   display: flex;
   width: 100vw;
   position: relative;
 }
 .homepage-div #main-page .image-div {
-  min-width: 50vw;
+  min-width: 45vw;
   align-items: center;
+}
+.homepage-div #main-page .image-div svg {
+  width: 45vw;
 }
 .homepage-div #main-page .chapters {
   padding: 10px;
@@ -52,11 +48,11 @@ body {
 }
 .homepage-div #main-page .chapters .lower-div a button:hover {
   color: white;
-  transform: scale(1.3);
+  transform: scale(1.001);
 }
 .homepage-div #main-page .chapters p {
   font-size: clamp(1rem, 4vw, 2rem);
-  display: inline;
+  display: inline-block;
 }
 .homepage-div #main-page .chapters h1 {
   font-size: clamp(2.3rem, 3vw, 4rem) !important;
@@ -109,19 +105,7 @@ body {
 }
 
 * {
-  overflow: hidden;
-}
-
-button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 20px;
-  margin: 10px;
-}
-button:hover {
-  color: white;
-  background: springgreen;
+  overflow-x: hidden;
 }
 
 .section-2 {
@@ -181,14 +165,6 @@ button:hover {
   flex-grow: 1;
   font-size: clamp(15px, 2vw, 40px);
 }
-.section-2 section .main .next-div {
-  text-align: right;
-  display: flex;
-  margin: 7%;
-  background: pink;
-  justify-content: flex-end;
-  align-items: center;
-}
 
 @media (max-width: 800px) {
   .section-2 section .main .content-grid {
@@ -222,6 +198,7 @@ button:hover {
   font-size: clamp(2.3rem, 5vw, 10rem);
   text-align: center;
   font-weight: bolder;
+  color: white;
 }
 .section3 h1 span {
   color: #f62b6a;
@@ -315,14 +292,12 @@ button:hover {
     transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg);
   }
 }
-* {
-  overflow: scroll;
-}
-
 .particle-grid {
   display: flex;
   height: 90vh;
+  box-sizing: border-box;
   max-width: 100vw;
+  padding: 10vw;
 }
 .particle-grid .partice-div {
   display: flex;
@@ -347,6 +322,11 @@ button:hover {
   bottom: 10%;
 }
 
+@media (max-width: 800px) {
+  .particle-grid {
+    padding: 0;
+  }
+}
 .next {
   text-align: center;
 }
@@ -354,9 +334,10 @@ button:hover {
   color: mediumspringgreen;
 }
 .next h1 {
-  font-size: clamp(2.5rem, 10vw, 5rem);
+  font-size: clamp(2rem, 10vw, 3rem);
   text-align: center;
   margin: 5vw;
+  color: white;
 }
 .next h1 i {
   color: deeppink;
@@ -376,12 +357,6 @@ button:hover {
   color: white;
 }
 
-.button-div {
-  width: 70%;
-  margin: 10vh auto;
-  text-align: center;
-}
-
 .next4 {
   height: 100vh;
   text-align: center;
@@ -390,7 +365,7 @@ button:hover {
   width: 60%;
 }
 .next4 h1 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 5rem);
   background: linear-gradient(45deg, #f5a549, #ee2678);
   -webkit-background-clip: text;
   background-clip: text;
@@ -401,7 +376,7 @@ button:hover {
   text-align: center;
 }
 .next5 h1 {
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 3rem);
   background: linear-gradient(45deg, #f5a549, #ee2678);
   -webkit-background-clip: text;
   background-clip: text;
@@ -411,38 +386,38 @@ button:hover {
 .next5 p {
   width: 70%;
   margin: 10% auto;
-  font-size: clamp(25px, 3vw, 40px);
+  font-size: clamp(13px, 3vw, 1rem);
 }
 
 .next3 ul h1, .next2 ul h1 {
-  font-size: clamp(5rem, 12vw, 8rem);
+  font-size: clamp(2rem, 7vw, 5rem);
   margin: 10vw;
 }
 .next3 ul div, .next2 ul div {
-  text-align: center;
+  text-align: left;
 }
 .next3 ul img, .next2 ul img {
   height: 50%;
 }
 .next3 li, .next2 li {
-  font-size: clamp(25px, 3vw, 3rem);
+  font-size: clamp(15px, 3vw, 2.5rem);
 }
 
-.next3 h1 {
-  font-size: clamp(1.5rem, 8vh, 3rem);
+.next3 h1, .inext4 h1 {
+  font-size: clamp(1.5rem, 5vh, 2.4rem);
   text-align: center;
   background: linear-gradient(45deg, #f5a549, #ee2678);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-.next3 p {
-  width: 70%;
+.next3 p, .inext4 p {
+  width: 90%;
   margin: auto;
-  font-size: clamp(25px, 5vw, 1.3rem);
+  font-size: clamp(14px, 4vw, 1rem);
 }
-.next3 div {
-  text-align: center;
+.next3 div, .inext4 div {
+  text-align: left;
   margin: 5vh;
 }
 
@@ -492,7 +467,7 @@ html, body {
 }
 
 .headig-class {
-  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   text-align: center;
   background: linear-gradient(45deg, #0e6cdc, #f12f85);
   -webkit-background-clip: text;
@@ -505,22 +480,27 @@ html, body {
 }
 .classification h2 {
   color: white;
-  font-size: clamp(2.5rem, 3vw, 4rem);
+  font-size: clamp(2rem, 2vw, 2.4rem);
 }
 
 li {
   color: white;
   list-style: disc !important;
   padding-left: 20px;
+  margin: 1vh;
+}
+
+ul {
+  text-align: center;
 }
 
 .universe {
-  height: 96vh;
+  height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 2vw 2vw;
+  grid-gap: 1vw 1vw;
 }
 .universe div {
   text-align: center;
@@ -535,9 +515,8 @@ li {
 
 @media (max-width: 600px) {
   .universe {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0;
-    height: auto;
+    display: block;
+    height: 200vh;
   }
 }
 * {
@@ -554,25 +533,23 @@ p {
 a {
   text-decoration: none;
   color: #27f4a0;
+  width: 10vw !important;
 }
 
 button {
-  padding: 10px 3px;
-  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  font-size: clamp(1.2rem, 4vw, 1.9rem);
   border: 2px solid #27f4a5;
   border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5% 5%;
   background: none;
-  padding: 3% 5%;
+  margin: 5% 5%;
+  padding: 2vw 3vw !important;
   color: #27f4a5;
   text-align: center;
 }
 button:hover {
-  color: white;
-  transform: scale(1.3);
+  color: black;
+  background: white;
+  border: none;
 }
 
 /*# sourceMappingURL=index.css.map */

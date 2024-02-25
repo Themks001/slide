@@ -12,12 +12,12 @@ const sectionTwo = () => {
    t1.from(["#child-grid-2", "#child-grid-4", "#child-grid-6"], {
     xPercent: "400",
     duration: 0.4,
-    stagger: 0.3
+    stagger: 0.1
    });
    t1.from(["#child-grid-1", "#child-grid-3", "#child-grid-5"], {
     xPercent: "-400",
     duration: 0.4,
-    stagger: 0.3
+    stagger: 0.1
    });
   }, comp);
 
@@ -42,7 +42,11 @@ const sectionTwo = () => {
      </div>
      <div>
       <Link to="/slide/elementryParticles">
-       <button>Next Slide</button>
+       <button>Next        
+       <i
+          className="fa-solid fa-arrow-right"
+          style={{ margin: "0 10px" }}
+         ></i></button>
       </Link>
      </div>
     </div>

@@ -2,8 +2,9 @@ import { useLayoutEffect, useRef } from "react";
 import SectionOneMain from "./sectionOneMain.tsx";
 import gsap from "gsap";
 function SectionOne() {
- const staggerValue = 0.002;
- const durationValue = 0.001;
+ const staggerValue = 0.1;
+ const durationValue = 0.1;
+ const durationValuePara = 0.2;
  const comp = useRef(null);
  useLayoutEffect(() => {
   let ctx = gsap.context(() => {
@@ -42,11 +43,11 @@ function SectionOne() {
      opacity: 0.1,
      duration: durationValue
     })
-    .from("#para1", { xPercent: "-100", opacity: 0.1, duration: durationValue })
-    .from("#para2", { xPercent: "100", opacity: 0.1, duration: durationValue })
-    .from("#para3", { xPercent: "-100", opacity: 0.1, duration: durationValue })
-    .from("#para4", { xPercent: "100", opacity: 0.1, duration: durationValue })
-    .from("#para5", { xPercent: "-100", opacity: 0.1, duration: durationValue })
+    .from("#para1", { xPercent: "-100", opacity: 0.1, duration: durationValuePara })
+    .from("#para2", { xPercent: "100", opacity: 0.1, duration: durationValuePara })
+    .from("#para3", { xPercent: "-100", opacity: 0.1, duration: durationValuePara })
+    .from("#para4", { xPercent: "100", opacity: 0.1, duration: durationValuePara })
+    .from("#para5", { xPercent: "-100", opacity: 0.1, duration: durationValuePara })
     .from("#button", { scale: 0, duration: durationValue });
   }, comp);
 

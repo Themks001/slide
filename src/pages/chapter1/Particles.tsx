@@ -13,9 +13,7 @@ const Particles = () => {
   "#particle7",
   "#particle8"
  ];
- if (Index == 8) {
-  setIndex(0);
- }
+
  const currentSelected = arrayList[Index];
  const particlesItems = [
   {
@@ -88,20 +86,30 @@ const Particles = () => {
   <>
    <div className="particle-grid">
     {particlesItems.map(({ name, description, description2 }, i) => {
-     return(
-     <div key={i} className="partice-div" id={`particle${i}`}>
-      <h1 className="particle-heading">{name}</h1>
-      <p className="particle-description">{description + description2}</p>
-     </div>)
+     return (
+      <div key={i} className="partice-div" id={`particle${i}`}>
+       <h1 className="particle-heading">{name}</h1>
+       <p className="particle-description">{description + description2}</p>
+       {Index == 8 ? (
+        <button className="button">
+         <Link to="/slide/classification">Next page</Link>
+        </button>
+       ) : (
+         <button onClick={() => setIndex(Index + 1)}>
+        <a href={currentSelected}>
+        <span>
+         Next          
+        </span>
+         <i
+          className="fa-solid fa-arrow-right"
+          style={{ margin: "1% 10px" }}
+         ></i>
+        </a>
+         </button>
+       )}
+      </div>
+     );
     })}
-   </div>
-   <div className="button-div">
-    <button className="button">
-     <Link to="/slide/classification">Next page</Link>
-    </button>
-    <button className="button" onClick={() => setIndex(Index + 1)}>
-     <a href={currentSelected}>Next slide</a>
-    </button>
    </div>
   </>
  );
