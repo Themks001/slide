@@ -25,7 +25,7 @@ const Elementary = () => {
       and material science.
      </p>
      <div>
-     <button className='button'>
+     <button>
        <Link to='/slide/particles'>Next slide</Link>
       </button>
       </div>

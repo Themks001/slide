@@ -73,8 +73,8 @@ const Fundamental = () => {
      </div>
   
    </section>
-   <div className='next-button'>
-     <button onClick={()=>setindex(index+1)} className='button'>
+   <div>
+     <button onClick={()=>setindex(index+1)}>
     <Link to='/slide/universe'>Next page</Link>
    </button>
    <button onClick={()=>setindex(index+1)} className='button'>

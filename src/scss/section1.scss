@@ -1,7 +1,5 @@
 * {
  box-sizing: border-box;
- overflow: scroll;
-
  font-family:
   system-ui,
   -apple-system,
@@ -16,7 +14,7 @@
   sans-serif;
 }
 body {
- background: #18161b;
+ background: #0c1e35;
 }
 
 $primary: #ebecf3;
@@ -36,12 +34,8 @@ $primary: #ebecf3;
   width: 100vw;
   position: relative;
   .image-div {
-   display: flex;
    min-width: 50vw;
    align-items: center;
-   img {
-    height: 60%;
-   }
   }
   .chapters {
    padding: 10px;
@@ -109,8 +103,6 @@ $primary: #ebecf3;
    color: #e72e68;
    text-transform: uppercase;
    text-align: center;
-   text-shadow: -1px -1px 0 white;
-   text-shadow: -2px -2px white;
   }
  }
 }
@@ -121,15 +113,16 @@ $primary: #ebecf3;
 
 @media (max-width: 800px) {
  #main-page {
-  flex-direction: column-reverse;
-  
-    }
+  .image-div {
+   display: none;
+   max-height: 10px;
+   background: deeppink;
+   svg {
+   max-height: 10px;
+    display: none;
    }
- 
- 
-.image-section {
- display: flex;
- justify-content: space-evenly;
+  }
+ }
 }
 .physic {
  color: #f3317a;

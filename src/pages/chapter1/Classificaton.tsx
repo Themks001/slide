@@ -59,8 +59,8 @@ const Classificaton = () => {
      </li>
     </ul>
    </div>
-   <div className="next-button classification-div">
-   <button className="button">
+   <div className="">
+   <button>
     <Link to='/slide/fundamental'>Next page</Link>
    </button>
    </div>

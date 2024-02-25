@@ -19,7 +19,7 @@
 }
 .section3 #s3-main-content div h2 {
   font-size: clamp(1.2rem, 2.7vw, 4rem);
-  background: #121212;
+  color: white;
 }
 .section3 h1 {
   font-size: clamp(2.3rem, 5vw, 10rem);
@@ -27,7 +27,7 @@
   font-weight: bolder;
 }
 .section3 h1 span {
-  color: #5bee56;
+  color: #f62b6a;
 }
 
 @media (max-width: 780px) {

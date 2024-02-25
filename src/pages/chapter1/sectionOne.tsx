@@ -1,10 +1,9 @@
 import { useLayoutEffect, useRef } from "react";
-
 import SectionOneMain from "./sectionOneMain.tsx";
 import gsap from "gsap";
 function SectionOne() {
- const staggerValue = 0.1;
- const durationValue = 0.3;
+ const staggerValue = 0.002;
+ const durationValue = 0.001;
  const comp = useRef(null);
  useLayoutEffect(() => {
   let ctx = gsap.context(() => {

@@ -1,24 +1,42 @@
 @import "variable.scss";
-@import 'section1.scss';
-@import 'Section2.scss';
-@import 'section3.scss';
-@import 'section4.scss';
+@import "section1.scss";
+@import "Section2.scss";
+@import "section3.scss";
+@import "section4.scss";
 @import "next.scss";
 @import "next2.scss";
-@import 'fundamental.scss';
-@import 'classificaton.scss';
+@import "fundamental.scss";
+@import "classificaton.scss";
 @import "universe.scss";
-*{
-  font-family: "Anta", sans-serif;
+* {
+ font-family: "Anta", sans-serif;
 }
-p{
-  color: white;
+p {
+ color: white;
  margin: 0;
  padding: 0;
- font-size: clamp(16px, 4vw, 25px) ;
- 
- }
-a{
+ font-size: clamp(16px, 4vw, 25px);
+}
+a {
  text-decoration: none;
- color: black;
+ color: #27f4a0;
+}
+
+button {
+ padding: 10px 3px;
+ font-size: clamp(1.2rem, 4vw, 1.5rem);
+ border: 2px solid #27f4a5;
+ border-radius: 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 5% 5%;
+ background: none;
+ padding: 3% 5%;
+ color: #27f4a5;
+ text-align: center;
+ &:hover {
+  color: white;
+  transform: scale(1.3);
+ }
 }

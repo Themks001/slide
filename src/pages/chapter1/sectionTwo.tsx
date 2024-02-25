@@ -40,9 +40,9 @@ const sectionTwo = () => {
 }
 
      </div>
-     <div className="next-div">
+     <div>
       <Link to="/slide/elementryParticles">
-       <button className="next-button">Next Slide</button>
+       <button>Next Slide</button>
       </Link>
      </div>
     </div>
