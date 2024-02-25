@@ -1,35 +1,96 @@
-.next3, .next2{
+.next3,
+.next2 {
  ul {
-  h1{
-   font-size: clamp(2rem, 7vw, 5rem);
-   margin: 10vw;
+  h1 {
+   font-size: clamp(2rem, 4vw, 3rem);
+   margin: 7vw;
   }
-  div{
+  div {
    text-align: left;
   }
-  img{
+  img {
    height: 50%;
-  }}
-  li{
-   font-size: clamp(15px, 3vw, 2.5rem);
+   display: block;
+   width: 89%;
+   margin: auto;
+  }
+ }
+ li {
+  font-size: clamp(15px, 3vw, 2.5rem);
  }
 }
-.next3, .inext4{
- h1{
-  font-size: clamp(1.5rem, 5vh, 2.4rem);
+.next3,
+.next4,
+.next8 {
+ padding: 0 3rem;
+ 
+ h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
   text-align: center;
   background: linear-gradient(45deg, #f5a549, #ee2678);
-     -webkit-background-clip: text;
-     background-clip: text;
-     color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
  }
- p{
+ p {
   width: 90%;
   margin: auto;
-  font-size: clamp(14px, 4vw, 1rem);
+  font-size: clamp(14px, 4vw, 2.3rem);
  }
- div{
+ div {
   text-align: left;
   margin: 5vh;
  }
+}
+
+.next8,
+.next9,
+.next10 {
+ padding: 3rem;
+ h1 {
+  color: mediumspringgreen;
+  margin: 1%;
  }
+
+ div {
+  width: 96vw;
+  div {
+   display: flex;
+   margin: 1vw;
+
+   div {
+    width: 50%;
+    color: white;
+    border-right: 2px solid white;
+    font-size: clamp(1rem, 3vw, 2rem);
+   }
+  }
+  margin: auto;
+ }
+}
+.next9,
+.next10 {
+ display: flex;
+ flex-direction: column;
+ height: 100dvh;
+ padding: 0 3rem;
+ flex-wrap: wrap;
+ h1 {
+  text-align: center;
+  font-size: clamp(25px, 3vw, 3rem);
+ }
+ li {
+  flex-grow: 1;
+  font-size: clamp(20px, 2vw, 2rem);
+  text-align: left;
+  min-width: 100vw;
+ }
+ button {
+  width: max-content;
+ }
+}
+@media (max-width: 600px) {
+ .next9 {
+  padding: 0;
+ }
+}

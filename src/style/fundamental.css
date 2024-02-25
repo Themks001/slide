@@ -12,21 +12,17 @@ html, body {
   display: flex;
   max-width: 100vw;
   overflow: hidden;
-  height: 90vh;
+  height: 100dvh;
 }
 .fundamental div {
   background: rgb(0, 0, 45);
-  padding: 2vw;
+  padding: 4vw;
   min-height: 100%;
   min-width: 100%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .fundamental div img {
-  width: 50%;
+  width: 30%;
   object-fit: contain;
 }
 .fundamental div h1 {
@@ -40,7 +36,9 @@ html, body {
 }
 .fundamental div p {
   color: white;
-  font-size: clamp(1rem, 1vw, 2.3rem);
+  font-size: clamp(1rem, 3vw, 2.3rem);
+  width: 79vw;
+  margin: auto;
 }
 
 /*# sourceMappingURL=fundamental.css.map */

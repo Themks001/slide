@@ -1,33 +1,114 @@
-.next3 ul h1, .next2 ul h1 {
-  font-size: clamp(2rem, 7vw, 5rem);
-  margin: 10vw;
+.next3 ul h1,
+.next2 ul h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 7vw;
 }
-.next3 ul div, .next2 ul div {
+.next3 ul div,
+.next2 ul div {
   text-align: left;
 }
-.next3 ul img, .next2 ul img {
+.next3 ul img,
+.next2 ul img {
   height: 50%;
+  display: block;
+  width: 89%;
+  margin: auto;
 }
-.next3 li, .next2 li {
+.next3 li,
+.next2 li {
   font-size: clamp(15px, 3vw, 2.5rem);
 }
 
-.next3 h1, .inext4 h1 {
-  font-size: clamp(1.5rem, 5vh, 2.4rem);
+.next3,
+.next4,
+.next8 {
+  padding: 0 3rem;
+}
+.next3 h1,
+.next4 h1,
+.next8 h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
   text-align: center;
   background: linear-gradient(45deg, #f5a549, #ee2678);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-.next3 p, .inext4 p {
+.next3 p,
+.next4 p,
+.next8 p {
   width: 90%;
   margin: auto;
-  font-size: clamp(14px, 4vw, 1rem);
+  font-size: clamp(14px, 4vw, 2.3rem);
 }
-.next3 div, .inext4 div {
+.next3 div,
+.next4 div,
+.next8 div {
   text-align: left;
   margin: 5vh;
+}
+
+.next8,
+.next9,
+.next10 {
+  padding: 3rem;
+}
+.next8 h1,
+.next9 h1,
+.next10 h1 {
+  color: mediumspringgreen;
+  margin: 1%;
+}
+.next8 div,
+.next9 div,
+.next10 div {
+  width: 96vw;
+  margin: auto;
+}
+.next8 div div,
+.next9 div div,
+.next10 div div {
+  display: flex;
+  margin: 1vw;
+}
+.next8 div div div,
+.next9 div div div,
+.next10 div div div {
+  width: 50%;
+  color: white;
+  border-right: 2px solid white;
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.next9,
+.next10 {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  padding: 0 3rem;
+  flex-wrap: wrap;
+}
+.next9 h1,
+.next10 h1 {
+  text-align: center;
+  font-size: clamp(25px, 3vw, 3rem);
+}
+.next9 li,
+.next10 li {
+  flex-grow: 1;
+  font-size: clamp(20px, 2vw, 2rem);
+  text-align: left;
+  min-width: 100vw;
+}
+.next9 button,
+.next10 button {
+  width: max-content;
+}
+
+@media (max-width: 600px) {
+  .next9 {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=next2.css.map */
