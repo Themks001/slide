@@ -3,17 +3,17 @@ import "../../style/universe.css";
 const universe = () => {
  return (
   <>
-   <div class="main-universe">
-    <div class="sun">
-     <div class="earth"></div>
-     <div class="earth"></div>
-     <div class="earth"></div>
-     <div class="earth"></div>
-     <div class="earth"></div>
-     <div class="earth"></div>
-     <div class="earth"></div>
-     <div class="earth"></div>
-     <div class="earth"></div>
+   <div className="main-universe">
+    <div className="sun">
+     <div className="earth"></div>
+     <div className="earth"></div>
+     <div className="earth"></div>
+     <div className="earth"></div>
+     <div className="earth"></div>
+     <div className="earth"></div>
+     <div className="earth"></div>
+     <div className="earth"></div>
+     <div className="earth"></div>
     </div>
    </div>
    <button>
