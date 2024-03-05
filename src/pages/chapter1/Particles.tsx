@@ -90,7 +90,7 @@ const Particles = () => {
       <div key={i} className="partice-div" id={`particle${i}`}>
        <h1 className="particle-heading">{name}</h1>
        <p className="particle-description">{description + description2}</p>
-       {Index == 8 ? (
+       {Index == 7 ? (
         <button className="button">
          <Link to="/slide/classification">Next page</Link>
         </button>

@@ -1,26 +1,111 @@
-.universe {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 1vw 1vw;
-}
-.universe div {
-  text-align: center;
-  padding: 5px;
-  border: 1px solid white;
-}
-.universe div h1 {
-  color: mediumspringgreen;
-  font-weight: 900;
-  margin: 5px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 600px) {
-  .universe {
-    display: block;
-    height: 200vh;
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.sun {
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(yellow, orange);
+  box-shadow: 1px 1px 50px gold, 1px 1px 100px gold, 1px 1px 150px gold, 1px 1px 230px gold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-universe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.earth {
+  min-height: 200px;
+  border-top: 1px solid grey;
+  border-radius: 50%;
+  min-width: 200px;
+  position: absolute;
+  overflow: auto;
+  animation: spin 10s linear infinite;
+}
+
+.earth::after {
+  content: "";
+  min-height: 10px;
+  min-width: 10px;
+  background: white;
+  box-shadow: 1px 1px 40px blue;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+}
+
+.earth:nth-child(2) {
+  height: 300px;
+  width: 300px;
+  animation: spin 13s linear infinite;
+}
+
+.earth:nth-child(3) {
+  height: 400px;
+  width: 400px;
+  animation: spin 16s linear infinite;
+}
+
+.earth:nth-child(4) {
+  height: 470px;
+  width: 470px;
+  animation: spin 19s linear infinite;
+}
+
+.earth:nth-child(5) {
+  height: 510px;
+  animation: spin 21s linear infinite;
+  width: 510px;
+}
+
+.earth:nth-child(6) {
+  animation: spin 23s linear infinite;
+  height: 570px;
+  width: 570px;
+}
+
+.earth:nth-child(7) {
+  animation: spin 25s linear infinite;
+  height: 640px;
+  width: 640px;
+}
+
+.earth:nth-child(8) {
+  animation: spin 28s linear infinite;
+  height: 690px;
+  width: 690px;
+}
+
+.earth:nth-child(9) {
+  animation: spin 30s linear infinite;
+  height: 760px;
+  width: 760px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
