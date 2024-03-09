@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #0c1e35;
+  background: linear-gradient(to right bottom, #2a5494, #990839, #df0750);
 }
 
 .homepage-div {
@@ -61,7 +61,7 @@ body {
   color: #27f4a5;
 }
 .homepage-div #main-page .chapters h1 span:last-child {
-  background: linear-gradient(45deg, #f5a549, #ee2678);
+  background: linear-gradient(45deg, #f5a549, blue);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -78,7 +78,7 @@ body {
 .intro-top div .intro-text {
   font-size: clamp(40px, 10vw, 8rem);
   font-weight: 900;
-  color: #e72e68;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
@@ -99,7 +99,7 @@ body {
   }
 }
 .physic {
-  color: #f3317a;
+  color: #a513e9;
   display: inline-block;
 }
 

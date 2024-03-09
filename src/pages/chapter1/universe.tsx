@@ -3,6 +3,9 @@ import "../../style/universe.css";
 const universe = () => {
  return (
   <>
+   <button>
+    <Link to="/slide/next">Next Chapter</Link>
+   </button>
    <div className="main-universe">
     <div className="sun">
      <div className="earth"></div>
@@ -16,9 +19,7 @@ const universe = () => {
      <div className="earth"></div>
     </div>
    </div>
-   <button>
-    <Link to="/slide/next">Next Chapter</Link>
-   </button>
+
   </>
  );
 };

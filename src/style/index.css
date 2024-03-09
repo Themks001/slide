@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #0c1e35;
+  background: linear-gradient(to right bottom, #2a5494, #990839, #df0750);
 }
 
 .homepage-div {
@@ -61,7 +61,7 @@ body {
   color: #27f4a5;
 }
 .homepage-div #main-page .chapters h1 span:last-child {
-  background: linear-gradient(45deg, #f5a549, #ee2678);
+  background: linear-gradient(45deg, #f5a549, blue);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -78,7 +78,7 @@ body {
 .intro-top div .intro-text {
   font-size: clamp(40px, 10vw, 8rem);
   font-weight: 900;
-  color: #e72e68;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
@@ -99,7 +99,7 @@ body {
   }
 }
 .physic {
-  color: #f3317a;
+  color: #a513e9;
   display: inline-block;
 }
 
@@ -305,7 +305,6 @@ body {
   min-height: 100%;
   min-width: 100%;
   padding: 10vw;
-  background: darkslateblue;
   margin: auto;
 }
 .particle-grid .partice-div h1 {
@@ -344,7 +343,7 @@ body {
   color: deeppink;
 }
 .next h1 span {
-  background: linear-gradient(45deg, #f5a549, #ee2678);
+  background: linear-gradient(45deg, orange, springgreen);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -378,7 +377,7 @@ body {
 }
 .next5 h1 {
   font-size: clamp(2.5rem, 5vw, 3rem);
-  background: linear-gradient(45deg, #f5a549, #ee2678);
+  background: linear-gradient(45deg, mediumspringgreen, aqua);
   -webkit-background-clip: text;
   background-clip: text;
   padding-top: 10vh;
@@ -386,8 +385,8 @@ body {
 }
 .next5 p {
   width: 70%;
-  margin: 10% auto;
-  font-size: clamp(13px, 3vw, 1rem);
+  margin: 5% auto;
+  font-size: clamp(13px, 8vw, 2rem);
 }
 
 .next11 h1 {
@@ -477,8 +476,7 @@ body {
 .next10 div div div {
   width: 50%;
   color: white;
-  border-right: 2px solid white;
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .next9,
@@ -607,6 +605,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: -333;
   transform: translate(-50%, -50%);
   height: 100%;
   width: 100%;
@@ -616,7 +615,7 @@ body {
 
 .earth {
   min-height: 200px;
-  border-top: 1px solid grey;
+  border-top: 1px solid linear-gradient(to right bottom, #23d92e, #9016d4);
   border-radius: 50%;
   min-width: 200px;
   position: absolute;
