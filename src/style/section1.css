@@ -4,7 +4,7 @@
 }
 
 body {
-  background: linear-gradient(to right bottom, #2a5494, #990839, #df0750);
+  background: #111;
 }
 
 .homepage-div {
@@ -61,7 +61,7 @@ body {
   color: #27f4a5;
 }
 .homepage-div #main-page .chapters h1 span:last-child {
-  background: linear-gradient(45deg, #f5a549, blue);
+  background: linear-gradient(45deg, #f91f52, #2a2aed);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -99,7 +99,7 @@ body {
   }
 }
 .physic {
-  color: #a513e9;
+  color: #22f854;
   display: inline-block;
 }
 

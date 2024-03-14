@@ -40,7 +40,7 @@ body{
  border-radius: 50%;
  min-width: 200px;
  position: absolute;
- overflow: auto;
+ 
  animation: spin 10s linear infinite;
 }
 .earth::after{
@@ -55,46 +55,78 @@ body{
  right: 0%;
  
 }
+.earth:first-child{
+  &::after{
+    content:'';
+    background: brown;
+  }
+}
 .earth:nth-child(2){
  height: 300px;
  width: 300px;
+ &::after{
+   content: '';
+   background: saddlebrown;
+ }
  animation: spin 13s linear infinite;
 }
 .earth:nth-child(3){
  height: 400px;
  width: 400px;
+  &::after{
+   content: '';
+   background: linear-gradient(royalblue, lawngreen);
+ }
  animation: spin 16s linear infinite;
 }
 .earth:nth-child(4){
  height: 470px;
  width: 470px;
+  &::after{
+   content: '';
+   background: #e96f6f;
+ }
  animation: spin 19s linear infinite;
 }
 .earth:nth-child(5){
- height: 510px;
+ height: 520px;
  animation: spin 21s linear infinite;
- width: 510px;
- 
+ width: 520px;
+  &::after{
+   content: '';
+   padding: 5px;
+   background: linear-gradient(white, brown);
+ }
 }
 .earth:nth-child(6){
  animation: spin 23s linear infinite;
  height: 570px;
  width: 570px;
+  &::after{
+   content: '';
+   background: lightgoldenrodyellow;
+   padding: 3px;
+ }
 }
 .earth:nth-child(7){
  animation: spin 25s linear infinite;
  height: 640px;
  width: 640px;
+  &::after{
+   content: '';
+   padding: 2px;
+   background: blue;
+ }
 }
 .earth:nth-child(8){
  animation: spin 28s linear infinite;
  height: 690px;
  width: 690px;
-}
-.earth:nth-child(9){
- animation: spin 30s linear infinite;
- height: 760px;
- width: 760px;
+  &::after{
+   content: '';
+   padding: 2px;
+   background: darkblue;
+ }
 }
 @keyframes spin{
  from{

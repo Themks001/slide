@@ -15,7 +15,7 @@
   sans-serif;
 }
 body {
- background: linear-gradient(to right bottom, #2a5494, #990839, #df0750);
+ background: #111;
 }
 
 $primary: #ebecf3;
@@ -76,7 +76,7 @@ $primary: #ebecf3;
     }
 
     span:last-child {
-     background: linear-gradient(45deg, #f5a549, blue);
+     background: linear-gradient(45deg, #f91f52, #2a2aed);
      -webkit-background-clip: text;
      background-clip: text;
      color: transparent;
@@ -122,6 +122,6 @@ $primary: #ebecf3;
  }
 }
 .physic {
- color: #a513e9;
+ color: #22f854;
  display: inline-block;
 }

@@ -1,7 +1,7 @@
 .headig-class {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.3rem, 5vw, 3rem);
   text-align: center;
-  background: linear-gradient(45deg, #0e6cdc, #f12f85);
+  background: linear-gradient(45deg, yellow, purple);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -12,12 +12,12 @@
 }
 .classification h2 {
   color: white;
-  font-size: clamp(2rem, 2vw, 2.4rem);
+  font-size: clamp(1.5rem, 2vw, 2.3rem);
 }
 
 li {
   color: white;
-  list-style: disc !important;
+  list-style: none !important;
   padding-left: 20px;
   margin: 1vh;
 }

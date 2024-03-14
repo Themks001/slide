@@ -15,7 +15,6 @@ html, body {
   height: 100dvh;
 }
 .fundamental div {
-  background: rgb(0, 0, 45);
   padding: 4vw;
   min-height: 100%;
   min-width: 100%;
@@ -26,17 +25,17 @@ html, body {
   object-fit: contain;
 }
 .fundamental div h1 {
-  font-size: clamp(1.4rem, 3vw, 3rem);
+  font-size: clamp(1.4rem, 3vw, 2.6rem);
   text-align: center;
   font-weight: 900;
-  background: linear-gradient(45deg, #0e6cdc, #f12f85);
+  background: linear-gradient(45deg, rgba(14, 220, 56, 0.7568627451), #f1d62f);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 .fundamental div p {
   color: white;
-  font-size: clamp(1rem, 3vw, 2.3rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   width: 79vw;
   margin: auto;
 }

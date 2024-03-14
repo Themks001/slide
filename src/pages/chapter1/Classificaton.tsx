@@ -1,10 +1,10 @@
 import {useState } from "react";
 import {Link} from 'react-router-dom'
 const Classificaton = () => {
- const [elementary, setelementry] = useState(true);
- const [lepton, setlepton] = useState(true)
- const [meson, setmeson] = useState(true)
- const [bayons, setbayons] = useState(true)
+ const [elementary, setelementry] = useState(false);
+ const [lepton, setlepton] = useState(false)
+ const [meson, setmeson] = useState(false)
+ const [bayons, setbayons] = useState(false)
  return (
   <>
    <h1 className='headig-class'>Classificaton Of Elementry Particle</h1>

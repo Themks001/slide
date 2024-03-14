@@ -16,7 +16,7 @@ const universe = () => {
      <div className="earth"></div>
      <div className="earth"></div>
      <div className="earth"></div>
-     <div className="earth"></div>
+  
     </div>
    </div>
 
